@@ -12,7 +12,7 @@ ENV ZIG_VERSION=0.13.0
 
 # Download and install Zig
 RUN curl -L https://ziglang.org/download/${ZIG_VERSION}/zig-linux-x86_64-${ZIG_VERSION}.tar.xz | \
-    tar -xJ -C /usr/local/bin --strip-components=1 && \
+    tar -xJ -C /usr/local/bin --strip-components=1
 
 # Set the working directory
 WORKDIR /app
